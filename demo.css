@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,600;1,700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all linear .4s;
+  text-decoration: none;
+  
+ 
+ }
+ html{
+  font-size: 60%;
+  }
+  body{
+   position: static;
+   padding: 2rem 9%;
+  background:#faf1fc;  
+  }
+  header{
+    position: fixed;
+   height: 7rem;
+   top: 0;
+   left: 0;
+   right: 0;
+   display: flex;
+   z-index: 1000;
+   align-items: center;
+   justify-content: space-between;
+   font-family:'Cormorant Garamond', serif;
+   padding: 4rem 12%;
+   box-shadow: 0 .5rem 1rem rgba(14, 14, 14, 0.125) ;
+   }
+  header .logo{
+   
+   padding: 1rem 1%;
+  }
+  /* header .logo img{
+   height: 2.3rem;
+   width: 2.3rem
+  } */
+  header .navbar{
+  position: relative;
+  right: 13rem;
+  }
+  header .navbar a{
+    font-weight:600;
+   font-size: 1.6rem;
+   margin: 1rem;
+   color: #4B5D68;
+   transition: all .3s ease-in;
+  }
+  header .navbar a:hover{
+   color: #212353;;
+  }
+  header .navbar a:active{
+   color: #212353;;
+  }
+  header .Request-btn{
+   display: flex;
+   padding:1rem 7%;
+   background: #FFFFFF;
+   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    font-size: 1.3rem;
+    font-weight: 500;
+    display: inline-block;
+    padding: .8rem 3rem;
+    cursor: pointer;
+    color: #000;
+    border-radius: 12rem;
+  
+  
+  }
+  header .Request-btn i{
+    font-size: 1.7rem;
+    position: relative;
+    left: .6rem;
+    top: .5rem;
+    color: #9C69E2;
+    font-weight: 100;
+  }
+  header #menu-btn{
+    cursor: pointer;
+    border: .1rem groove #fcfaf0;
+    border-radius: .3rem;
+    padding: 1rem;
+    display: none;
+    color: #9C69E2;
+    font-size: 2rem;
+  
+}
+  .section{
+    font-family: 'Vollkorn', serif;
+   position: relative;
+   top: 8rem;
+  }
+ 
+  .section .row{
+    border: .4rem solid #e77dce;
+  padding: 2rem;
+  box-shadow: 0 .5rem 1rem rgba(14, 14, 14, 0.125);
+  background: #9C69E2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  border-radius: .5rem;
+ }
+ .section .row .table{
+   border: 2px solid #ed89e7;
+ padding: 2rem;
+   flex: 1 1 30rem;
+   border-radius: .9rem;
+ 
+ 
+ }
+ /* .section .row table{
+   justify-content:center;
+   align-items: center;
+ 
+ } */
+
+ 
+ .section .row .table .tab .tbody th{
+  border:1px solid #f493f4;
+  background: #fcc6ed;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: .4rem;
+  color: #760085;
+ }
+  .section .row .table .tab #showUsers{
+    justify-content: space-between;
+    align-items: center;
+     text-align: center;
+
+  /* border:1px solid #f493f4;
+  background: #fcc6ed;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: .4rem;
+  border-spacing: 1rem;
+  color: #760085; 
+  */
+ } 
+ .section .row .table .tab #showUsers td{
+  border:1px solid #f493f4;
+  background: #fcc6ed;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: .4rem;
+  border-spacing: 1rem;
+  color: #760085; 
+ }
+ .section .row .table .tab #showUsers td:hover{
+   background: #fcfaf0;
+ }
+ .section .row form{
+   border-radius: .9rem;
+   border: 2px solid #ed89e7;
+  padding: 2rem;
+   flex: 1 1 35rem;
+ }
+ .section .row form h4{
+   font-size: 2rem;
+   color: #ffc8ef;
+   text-align: center;
+   font-weight: 300;
+ }
+ .section .row form label{
+   color: #fcfaf0;
+   padding-top: .6rem;
+   font-size: 1.8rem;
+ }
+ .section .row form .inputBox{
+ 
+   display:flex;
+   flex-flow: column;
+  
+ 
+ }
+ .section .row form .inputBox input{
+     background-color: #ffffff;
+     padding: 1rem;
+     margin: 1rem 0;
+     font-size: 1.7rem;
+     color: #000;
+     text-transform:capitalize;
+     border:2px solid #e77dce;
+     width: 100%;
+     height: 50px;
+     border-radius: 1rem;
+    
+ }
+ .section .row form .btn{
+   margin-top: 3rem;
+  
+ }
+ 
+  form .btn{
+     font-size: 1.7rem;
+     display: inline-block;
+     border: .2rem solid #e77dce;
+     padding: .8rem 3rem;
+     cursor: pointer;
+     color: #fcfaf0;
+     border-radius: .7rem;
+     position: relative;
+     overflow: hidden;
+     z-index: 0;
+     margin-top: 1rem;
+    
+ 
+ }
+ form .btn::before{
+     
+     content: '';
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 0%;
+     height: 100%;
+     background: #e77dce;
+     transition: .4s linear;
+     z-index: -1;
+ }
+ form .btn:hover::before{
+    
+ width: 100%;
+ left: 0;
+ }
+ 
+ @media screen and (max-width:1000px) {
+   html{
+     font-size: 45%;
+   }
+   header{
+     padding: 2rem;
+     height: 9rem;
+   }
+   header .logo{
+     display: flex;
+     
+   }
+   header .logo img{
+     padding: .4rem;
+   }
+   header .logo .img-1{
+     position: relative;
+     height: 50%;
+     width: 100%;
+     top: 2rem;
+   }
+   
+  }
+  @media screen and (max-width:990px){
+    header #menu-btn{
+      display: initial;
+    }
+   
+    
+    
+    
+    header .navbar{
+      width: 100%;
+        height: 300%;
+        position: absolute;
+        top: 80%;
+        left: 0;
+        right: 0;
+        background: #fc00ff;  
+       background: #9C69E2;
+        border-top: .1rem solid rgba(0, 0, 0, 0.1) ;
+        clip-path: polygon(0 0,100% 0,100% 0, 100% 0,0 0);
+        transition: .5s ease;
+    
+    
+    }
+    
+    header .navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    header .navbar a{
+      font-size: 1.4rem;
+       color: #fc73b7;
+        margin: 1rem;
+        padding: 1rem;
+        display: block;
+       text-align: center;
+        border-left: 1rem solid #fff;
+        background: white;
+        transition: .4s ease-in;
+        border-radius: .4rem;
+    }
+    header .navbar a:hover{
+        background:#ed89e7;
+        color: #fff;
+        border-left: .5rem solid #faf1fc;
+     
+    
+    }
+  }
+   
+   
+   
+  
+  
+  @media screen and (max-width:690px){
+  
+   html{
+     font-size: 45%;
+   }
+   header .navbar{
+     right: 6rem;
+   }
+ 
+  }
+  @media screen and (max-width:480px){
+    html{
+      font-size: 32%;
+    }
+    
+ 
+  }
+ 
+ 
+ 
+ 
