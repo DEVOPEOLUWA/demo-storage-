@@ -70,6 +70,7 @@
 
 </body>
 <script>
+  let btn = document.getElementById('save_btn')
   showData();
 function saveData()
 {
@@ -96,7 +97,7 @@ localStorage.setItem("users",JSON.stringify(user_records));
 }
 if(!idNumber || !itemName || !itemPrice){
   alert('please fill the boxes');
-  
+  btn.disabled  = true
   return;
  }
 showData();
