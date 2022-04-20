@@ -28,7 +28,7 @@ html::-webkit-scrollbar-thumb{
   body{
    position: static;
    padding: 2rem 9%;
-  background:#faf1fc;  
+ background: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);   
   }
   header{
     position: fixed;
@@ -42,7 +42,6 @@ html::-webkit-scrollbar-thumb{
    justify-content: space-between;
    font-family:'Cormorant Garamond', serif;
    padding: 4rem 12%;
-   box-shadow: 0 .5rem 1rem rgba(14, 14, 14, 0.125) ;
    }
   header .logo{
    
