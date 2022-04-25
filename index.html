@@ -5,7 +5,7 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Request-Demo</title>
- <link rel="stylesheet" href="./demo.css">
+ <link rel="stylesheet" href="/Assets/styles/demo.css">
  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
  <link
@@ -17,110 +17,132 @@
 </head>
 <body>
  <header class="header">
-  <a href="https://main--tiny-chaja-bf55e6.netlify.app/" class="logo">
-   <img src="./Rectangle 32.png" class="img-1" alt="">
-   <img src="./Rectangle 33.png" alt="">
+  <a href="https://tiny-chaja-bf55e6.netlify.app/" class="logo">
+   <img src="/Assets/Images/Rectangle 32.png" class="img-1" alt="">
+   <img src="/Assets/Images/Rectangle 33.png" alt="">
   </a>
   <nav class="navbar">
     
-    <a href="https://main--tiny-chaja-bf55e6.netlify.app/">About</a>
-    <a href="#help">Help</a>
-    <a href="#features">Features</a>
-    <a href="#sign-up">Signup</a>
+    <a href="https://tiny-chaja-bf55e6.netlify.app/">About</a>
+    <a href="https://tiny-chaja-bf55e6.netlify.app/">Help</a>
+    <a href="https://tiny-chaja-bf55e6.netlify.app/">Features</a>
+    <a href="https://tiny-chaja-bf55e6.netlify.app/">Signup</a>
   </nav>
    
-   <a href="./demo.html" class="Request-btn">Request Demo <i class="material-icons">arrow_forward</i>
+   
     </a>
     <div class="fas fa-bars create" id="menu-btn"></div>
 
 </header>
-  <div class="section" id="section">
+<section class="about" id="about">
+  <div class="content">
+    <h3>Datawarehouse Demo</h3>
+   <p>Enter your various data so  that you can access it  at any time through the internet.
+    This is a very flexible storage area has a high level of security.</p>
+    <a href="#" class="btn">Start demo</a>
+  </div>
+  <div class="image">
+   <img src="/Assets/Images/image5 1.png" alt="" />
+ </div>
+ </section>
+<section class="section" id="section">
+ <div class="row">
+  <form action="/" id="form">
+   
+     <div class="input-control">
+      <label for="number">ID:</label>
+      <div class="error"></div>
+      <input type="number" id="idNumber" placeholder="ID" />
+      
+    </div>
+    <div class="input-control">
+     
+      <label for="name">Item name:</label>
+      <div class="error"></div>
+      <input type="text" id="itemName" placeholder="Item name" />
+     </div>
+      <div class="input-control">
+      <label for="number">Item Price(#):</label>
+      <div class="error"></div>
+      <input type="number" id="itemPrice" placeholder="Item price" />
+      </div>
+    <input type="submit" value="Add data" class="btn-1">
+  </form>
+  <div class="table">
+   <table id="table">
+    <tr>
+     <th>ID</th>
+     <th>Item name</th>
+     <th>Item Price(#)</th>
  
-  <div class="row">
-    <div class="table">
-    <table class="tab">
-     <tr class="tbody">
-       <th>ID</th> 
-      <th>Item name</th>
-      <th>Item Price(#)</th>
-  </tr>
-  <tr id="showUsers"></tr>
-    </table>
+    </tr>
+    <tbody id="showUser">
+    
+   </table>
   </div>
 
-   
-  
-    <form action="">
-      <h4>Enter your various data so  that you can access it  at any time through the internet.
-        This is a very flexible storage area has a high level of security.</h4>
-      <div class="inputBox">
-        <label for="number">ID:</label>
-        <input type="number" id="idNumber" placeholder="ID" />
-        <label for="name">Item name:</label>
-        <input type="text" id="itemName" placeholder="Item name" />
-        <label for="number">Item price(#):</label>
-        <input type="number" id="itemPrice" placeholder="Item price" />
+ </div>
+</section>
+<footer class="footer">
+ <h2 class="Try">
+  Try for free!
+ </h2>
+ <div class="buttons">
+  <a href="#" class="btns"> Learn more  </a>
+  <a href="#" class="Request-btn">Request Demo <i class="material-icons">arrow_forward</i></a>
 
-      </div>
-    
-      <a href="#" class="btn" onclick="saveData()" id="save_btn">Submit</a>
-    </form>
+ </div> 
+  <h5>Get limited 1 week free try our features!</h5>
+  
+    <a class="IMG" href="">
+     <img src="/Assets/Images/Rectangle 32.png" class="img-1" alt="">
+     <img src="/Assets/Images/Rectangle 33.png" alt="">
+    </a>
+    <div class="nav">
+      <a href="#about">DataWare House</a>
+    <a href="#about">About</a>
+    <a href="#about">Help</a>
+    <a href="#about">Social Media</a>
+  </div>
+     <div class="sub"> <p> Warehouse Society, 234</p>
+ 
+     <p> Bahagia Ave Street 
+      PRBW 29281</p>
+      <h5>info@warehouse.project</h5>
+        <h5>1-232-3434 (Main)</h5>
+      </div> 
+<div class="links">
+  <div class="link">
+    <a href="#">Profile</a>
+    <a href="#">Features</a>
+    <a href="#">Carrees</a>
+    <a href="#">DW news</a>
+  </div>
+  <div class="link-2">
+    <a href="#">Support</a>
+    <a href="#">Signup</a>
+    <a href="#">Guide</a>
+    <a href="#">Report</a>
+    <a href="#">Q & A</a>
+
   </div>
 </div>
-
-</body>
-<script>
-  let btn = document.getElementById('save_btn')
-  showData();
-function saveData()
-{
-let idNumber,itemName,itemPrice;
-idNumber=document.getElementById("idNumber").value;
-itemName=document.getElementById("itemName").value;
-
-itemPrice=document.getElementById("itemPrice").value;
-
-let user_records=new Array();
-user_records=JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
-if(user_records.some((v)=>{return v.itemName==itemName}))
-{
-  alert("duplicate data");
-}
-else
-{
-  user_records.push({
-  "idNumber":idNumber,
-  "itemName":itemName,
-  "itemPrice":itemPrice
-})
-localStorage.setItem("users",JSON.stringify(user_records));
-}
-if(!idNumber || !itemName || !itemPrice){
-  alert('please fill the boxes');
-  btn.disabled  = true
-  return;
- }
-showData();
-}
-
-function showData()
-{
-  document.getElementById("showUsers").innerHTML='';
-  let user_records=new Array();
-user_records=JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
-  if(user_records)
-  {
-    for(let i=0;i<user_records.length;i++)
-    {
-      let addDiv=document.createElement('tr');
-  addDiv.className="tbody";
-  addDiv.innerHTML=    '<td>'+ user_records[i].idNumber+' </td> <td> ' +user_records[i].itemName + ' </td><td>' + user_records[i].itemPrice + ' </td>';
-  document.getElementById("showUsers").appendChild(addDiv);
-
-    }
-  }
+<div class="socials">
+  <i class="fab fa-facebook"></i>
+  <i class="fab fa-instagram"></i>
+  <i class="fab fa-twitter"></i>
+</div>
+<div class="last">
+  <div class="content">
+    <h4>© Datawarehouse™, 2020. All rights reserved.</h4>
+     <h4> Company Registration Number: 21479524.</h4>
+  </div>
+  <div class="icon">     
   
-  }
-</script>
-<script src="./demo.js"></script> 
+     <i class="material-icons">insert_comment</i>
+  </div>
+</div>
+</footer>  
+</body>
+<script src="/Assets/scripts/demo.js"></script>
 </html>
